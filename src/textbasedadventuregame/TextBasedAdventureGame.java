@@ -37,6 +37,19 @@ public class TextBasedAdventureGame {
 
         boolean running = true;
 
+        System.out.println("Welcome to the Dungeon!");
+
+        GAME: // Label
+        while (running) {
+            System.out.println("----------------------------------------------");
+
+            int enemyHealth = rand.nextInt(maxEnemyHealth);
+            String enemy = enemies[rand.nextInt(enemies.length)];
+
+            System.out.println("\t# " + enemy + " has appeared! #\n");
+
+        }
+
     }
 
 }
