@@ -84,7 +84,8 @@ public class TextBasedAdventureGame {
                         System.out.println("\t> You have no health potions left! Defeat enemies for a chance to get one!\n");
                     }
                 } else if (input.equals("3")) {
-
+                    System.out.println("\tYou run away from the " + enemy + "!");
+                    continue GAME;
                 } else {
 
                 }
