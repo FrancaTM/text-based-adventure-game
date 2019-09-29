@@ -58,6 +58,29 @@ public class TextBasedAdventureGame {
 
                 String input = in.nextLine();
 
+                if (input.equals("1")) {
+                    int damageDealt = rand.nextInt(attackDamage);
+                    int damageTaken = rand.nextInt(enemyAttackDamage);
+
+                    enemyHealth -= damageDealt;
+                    health -= damageTaken;
+
+                    System.out.println("\t> You strike the " + enemy + " for " + damageDealt + " damage");
+                    System.out.println("\t> You receive " + damageTaken + " in retaliation!");
+
+                    if (health < 1) {
+                        System.out.println("\t> You have taken too much damage, you are too weak to go on!");
+                        break;
+                    }
+
+                } else if (input.equals("2")) {
+
+                } else if (input.equals("3")) {
+
+                } else {
+
+                }
+
             }
 
         }
