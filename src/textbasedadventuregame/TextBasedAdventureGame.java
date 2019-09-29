@@ -87,7 +87,7 @@ public class TextBasedAdventureGame {
                     System.out.println("\tYou run away from the " + enemy + "!");
                     continue GAME;
                 } else {
-
+                    System.out.println("\tInvalid command!");
                 }
 
             }
