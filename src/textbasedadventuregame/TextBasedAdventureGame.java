@@ -48,6 +48,18 @@ public class TextBasedAdventureGame {
 
             System.out.println("\t# " + enemy + " has appeared! #\n");
 
+            while (enemyHealth > 0) {
+                System.out.println("\tYour HP: " + health);
+                System.out.println("\t" + enemy + "'s HP: " + enemyHealth);
+                System.out.println("\n\tWhat would you like to do?");
+                System.out.println("\t1. Attack");
+                System.out.println("\t2. Drink health potion");
+                System.out.println("\t3. Run!");
+
+                String input = in.nextLine();
+
+            }
+
         }
 
     }
