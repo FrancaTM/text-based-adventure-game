@@ -5,6 +5,9 @@
  */
 package textbasedadventuregame;
 
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  *
  * @author francatm
@@ -15,8 +18,25 @@ public class TextBasedAdventureGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("hello");
+
+        // System objects
+        Scanner in = new Scanner(System.in);
+        Random rand = new Random();
+
+        // Game variables
+        String[] enemies = {"Skeleton", "Zombie", "Warrior", "Assassin"};
+        int maxEnemyHealth = 75;
+        int enemyAttackDamage = 25;
+
+        // Player variables
+        int health = 100;
+        int attackDamage = 50;
+        int numHealthPotions = 3;
+        int healthPotionHealAmount = 30;
+        int healthPotionDropChance = 50; // Percentage
+
+        boolean running = true;
+
     }
-    
+
 }
