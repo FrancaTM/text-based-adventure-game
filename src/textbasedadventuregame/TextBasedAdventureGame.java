@@ -74,7 +74,15 @@ public class TextBasedAdventureGame {
                     }
 
                 } else if (input.equals("2")) {
-
+                    if (numHealthPotions > 0) {
+                        health += healthPotionHealAmount;
+                        numHealthPotions--;
+                        System.out.println("\t> You drink a health potion, healing yourself for " + healthPotionHealAmount
+                                + "\n\t> You now have " + health + " HP"
+                                + "\n\t> You have " + numHealthPotions + " health potions left\n");
+                    } else {
+                        System.out.println("\t> You have no health potions left! Defeat enemies for a chance to get one!\n");
+                    }
                 } else if (input.equals("3")) {
 
                 } else {
