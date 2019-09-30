@@ -89,10 +89,16 @@ public class TextBasedAdventureGame {
                 } else {
                     System.out.println("\tInvalid command!");
                 }
-
+            }
+            if (health < 1) {
+                System.out.println("You limp out of the dungeon, weak from battle");
+                break;
             }
 
         }
+        System.out.println("#######################");
+        System.out.println("# THANKS FOR PLAYING! #");
+        System.out.println("#######################");
 
     }
 
