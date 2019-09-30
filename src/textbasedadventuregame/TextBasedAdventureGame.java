@@ -95,6 +95,16 @@ public class TextBasedAdventureGame {
                 break;
             }
 
+            System.out.println("----------------------------------------------");
+            System.out.println("# " + enemy + " was defeated! #");
+            System.out.println("# You have " + health + " HP left #");
+
+            if (rand.nextInt(100) < healthPotionDropChance) {
+                numHealthPotions++;
+                System.out.println("# The " + enemy + " dropped a health potion! #");
+                System.out.println("# You now have " + numHealthPotions + " health potion(s) #");
+            }
+
         }
         System.out.println("#######################");
         System.out.println("# THANKS FOR PLAYING! #");
