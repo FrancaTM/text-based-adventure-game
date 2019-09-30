@@ -105,6 +105,25 @@ public class TextBasedAdventureGame {
                 System.out.println("# You now have " + numHealthPotions + " health potion(s) #");
             }
 
+            System.out.println("----------------------------------------------");
+            System.out.println("What would you like to do now?");
+            System.out.println("1. Continue fighting");
+            System.out.println("2. Exit dungeon");
+
+            String input = in.nextLine();
+
+            while (!input.equals("1") && !input.equals("2")) {
+                System.out.println("\tInvalid command!");
+                input = in.nextLine();
+            }
+
+            if (input.equals("1")) {
+                System.out.println("You continue on your adventure!");
+            } else if (input.equals("2")) {
+                System.out.println("You exit the dungeon, successful from your adventures!");
+                break;
+            }
+
         }
         System.out.println("#######################");
         System.out.println("# THANKS FOR PLAYING! #");
